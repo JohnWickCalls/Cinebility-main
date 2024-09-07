@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import Spinner from '../../components/spinner/Spinner';
 import InfiniteScroll from "react-infinite-scroll-component"
 import MovieCard from '../../components/movieCart/MovieCart';
+
 const SearchResult = () => {
   const [data, setData] = useState(null);
   const [pageNum, setPageNum] = useState(1);

@@ -1,9 +1,6 @@
 import React from 'react'
 import  { useRef } from "react";
-import {
-    BsFillArrowLeftCircleFill,
-    BsFillArrowRightCircleFill,
-} from "react-icons/bs";
+import {BsFillArrowLeftCircleFill,BsFillArrowRightCircleFill} from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import dayjs from "dayjs";
@@ -80,7 +77,7 @@ const Carousel = ({data,loading,endPoint,title}) => {
                         {item.title || item.name}
                        </span>
                        <span className='date'>
-                       {dayjs(item.release_Date).format("MMM D, YYYY")}
+                       {dayjs(item.release_date).format("MMM D, YYYY")}
                       </span>
                        </div>
                     </div>
@@ -92,9 +89,7 @@ const Carousel = ({data,loading,endPoint,title}) => {
          <div classsName="loadingSkeleton">
           {skItem()}
           {skItem()}
-
           {skItem()}
-
           {skItem()}
          </div>
         </span>

@@ -7,6 +7,7 @@ import Cast from './cast/Cast';
 import VideosSection from './videoSection/VideoSection';
 import Similar from './carousels/Similar';
 import Recommendation from "./carousels/Recommendation"
+
 const Details = () => {
   const {mediaType,id}=useParams();
   console.log(mediaType + "TYPES")
